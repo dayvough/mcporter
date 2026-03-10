@@ -22,6 +22,7 @@ MCPorter helps you lean into the "code execution" workflows highlighted in Anthr
 - **Friendly composable API.** `createServerProxy()` exposes tools as ergonomic camelCase methods, automatically applies JSON-schema defaults, validates required arguments, and hands back a `CallResult` with `.text()`, `.markdown()`, `.json()`, `.images()`, and `.content()` helpers.
 - **OAuth and stdio ergonomics.** Built-in OAuth caching, log tailing, and stdio wrappers let you work with HTTP, SSE, and stdio transports from the same interface.
 - **Ad-hoc connections.** Point the CLI at *any* MCP endpoint (HTTP or stdio) without touching config, then persist it later if you want. Hosted MCPs that expect a browser login (Supabase, Vercel, etc.) are auto-detected—just run `mcporter auth <url>` and the CLI promotes the definition to OAuth on the fly. See [docs/adhoc.md](docs/adhoc.md).
+- **In-repo stdio servers.** Ship reusable MCP servers alongside mcporter itself; the Attio REST-backed example in [docs/attio-mcp.md](docs/attio-mcp.md) shows the pattern for team-shared integrations that should not depend on hosted OAuth.
 
 ## Quick Start
 

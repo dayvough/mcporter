@@ -71,3 +71,5 @@ pnpm mcporter:call context7.get-library-docs topic=hooks
 - `MCPORTER_STDIO_LOGS=1` – print the buffered stderr output from stdio MCP servers (handy when debugging noisy backends).
 
 All three entry points honour the same `--config`, `--root`, and `--log-level` flags as the published CLI.
+
+Need a concrete in-repo stdio server example? See `docs/attio-mcp.md` for the Attio REST-backed MCP server launched via `pnpm attio:mcp`.

@@ -45,7 +45,8 @@
     "docs:list": "pnpm exec tsx scripts/docs-list.ts",
     "generate:schema": "tsx scripts/generate-json-schema.ts",
     "mcporter:list": "pnpm exec tsx src/cli.ts list",
-    "mcporter:call": "pnpm exec tsx src/cli.ts call"
+    "mcporter:call": "pnpm exec tsx src/cli.ts call",
+    "attio:mcp": "pnpm exec tsx examples/attio/stdio-attio-server.ts"
   },
   "dependencies": {
     "@iarna/toml": "^2.2.5",
